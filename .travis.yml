@@ -1,6 +1,11 @@
 language: c
-before_script: cd _mirage
-script: bash -ex travis.sh
+before_install:
+  - sudo apt-get install imagemagick
+  - sudo apt-get install ffmpeg
+before_script: ./expose.sh
+script:
+  - cd _mirage
+  - bash -ex travis.sh
 sudo: required
 env:
   matrix:
