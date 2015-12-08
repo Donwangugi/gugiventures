@@ -1,7 +1,7 @@
 language: c
 before_install:
   - sudo apt-get install imagemagick
-  - sudo apt-get install ffmpeg
+  - sudo apt-get install libav
 before_script: ./expose.sh
 script:
   - cd _mirage
