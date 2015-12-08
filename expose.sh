@@ -184,7 +184,7 @@ cleanup() {
 		rm -f "$output_url"
 	fi
 
-	exit
+	#exit
 }
 
 trap cleanup EXIT INT TERM
