@@ -1,7 +1,7 @@
 language: c
 before_install:
   - sudo apt-get install imagemagick
-before_script: ./expose.sh
+before_script: bash -ex expose.sh
 script:
   - cd _mirage
   - bash -ex travis.sh
