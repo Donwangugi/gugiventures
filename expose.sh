@@ -168,26 +168,26 @@ chmod -R 740 "$scratchdir"
 
 output_url=""
 
-cleanup() {
-	# remove any ffmpeg log/temp files
-	rm -f ffmpeg*.log
-	rm -f ffmpeg*.mbtree
-	rm -f ffmpeg*.temp
+#cleanup() {
+#	# remove any ffmpeg log/temp files
+#	rm -f ffmpeg*.log
+#	rm -f ffmpeg*.mbtree
+#	rm -f ffmpeg*.temp
 
-	if [ -d "$scratchdir" ]
-    then
-        rm -r "$scratchdir"
-    fi
+#	if [ -d "$scratchdir" ]
+#    then
+#        rm -r "$scratchdir"
+#    fi
 
-	if [ -e "$output_url" ]
-	then
-		rm -f "$output_url"
-	fi
+#	if [ -e "$output_url" ]
+#	then
+#		rm -f "$output_url"
+#	fi
 
 	#exit
-}
+#}
 
-trap cleanup EXIT INT TERM
+#trap cleanup EXIT INT TERM
 
 printf "Scanning directories"
 
